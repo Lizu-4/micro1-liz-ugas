@@ -8,7 +8,7 @@ var matriz1 = generarMatriz(size);
 var matriz2 = generarMatriz(size);
 var matriz3 = generarMatriz(size);
 var matriz4 = generarMatriz(size);
-let turnos = 80;
+let turnos = 50;
 
 document.getElementById("numero-turnos").textContent = turnos; 
 
@@ -88,7 +88,7 @@ function turno() {
     if (turnos > 0 && estadoPartida) {
         mostrarPuntos();
         turnos = turnos - 1
-        numero = Math.floor(Math.random() * 30) + 1;
+        numero = Math.floor(Math.random() * 50) + 1;
         document.getElementById("numero").textContent = numero;   
         document.getElementById("numero-turnos").textContent = turnos;   
         marcarNumero(jugador_1, numero, padre);
@@ -282,7 +282,7 @@ function generarMatriz(size) {
         for (let j = 0; j < size; j++) {
             let randomNumber;
         do {
-            randomNumber = randomNumber = Math.floor(Math.random() * 30) + 1;
+            randomNumber = randomNumber = Math.floor(Math.random() * 50) + 1;
         } while (matriz.flat().includes(randomNumber));
         matriz[i].push(randomNumber);
         }

@@ -1,6 +1,10 @@
 
 console.log(localStorage);
+localStorage.setItem('size', 0);
+
 mostrarHistorial();
+
+
 
 function handleSubmit() {
     const size = document.getElementById('tamano').value;
