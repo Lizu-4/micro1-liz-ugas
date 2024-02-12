@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="./juego.css" />
+</head>
+<body>
+    
+    <div class="container">
+
+
+
+        <div class="top">
+            <div class="numero-caja">
+                <div id="numero"></div>
+            </div>
+            <div class="turnos">Turnos
+                <div id="numero-turnos"></div>
+            </div>
+        </div>
+
+        <div id="mensaje"></div>
+
+        
+            <div class="select-container">
+                <label for="cartones">Seleccione un cartón:</label>
+                <select id="cartones">
+                    <option value="1">Cartón 1</option>
+                    <option value="2">Cartón 2</option>
+                    <option value="3">Cartón 3</option>
+                    <option value="4">Cartón 4</option>
+                </select>
+            </div>
+
+            <div class="carton-container">
+                <div id="carton">
+                </div>
+            </div>
+
+
+
+
+
+
+        <div class="bottom">
+            <button type="button" id="boton-numero" onclick="turno()">Sacar numero</button>
+        </div>
+        
+        <div class="puntos">Puntos
+            
+            <div id="score"></div>
+        </div>
+
+        
+
+        <div class="bottom">
+            <button type="button" id="boton-numero" onclick="volverHome()">Regresar</button>
+        </div>
+
+    </div>
+
+<script src="./juego.js"></script>
+</body>
+</html>

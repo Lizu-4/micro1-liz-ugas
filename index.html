@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+    <header>
+        Bingomet
+    </header>
+
+    <div class="container">
+        <div class="upper">
+            
+            <div class="top">
+                <label for="tamano">Tamaño del tablero:</label>
+                <input type="number" name="tamano" id="tamano" min="3" max="5">    
+                <label for="juador1">Nombre de los jugadores:</label> 
+            </div>
+
+            <input type="text" name="jugador1" id="input_jugador1" placeholder="Jugador 1">
+
+            <input type="text" name="jugador2" id="input_jugador2"  placeholder="Jugador 2">
+
+            <input type="text" name="jugador3" id="input_jugador3"  placeholder="Jugador 3">
+
+            <input type="text" name="jugador4" id="input_jugador4"  placeholder="Jugador 4">
+
+        </div>
+        <div class="lower">
+            <div class="lower-left">
+                <button onclick="handleSubmit()">Jugar</button>
+        </div>
+        <div class="lower-right">
+                <h3>Puntaje</h3>
+                <div id="puntos"></div>
+        </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

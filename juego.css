@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-height: 100vh;
+    margin: 10px;
+}
+
+.top{
+    display: inline-flex;
+    align-self: center;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;}
+
+.numero-caja{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    margin-left: 40px;
+}
+
+
+#numero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    line-height: 50px;
+    text-align: center;
+    font-size: 2em;
+    }
+
+.turnos{
+    float: inline-end;
+    width: 10%;
+}
+
+#carton1{
+    width: fit-content;
+}
+
+.prev{
+    margin: 10px;
+    width: 0;
+	height: 0;
+	border-width: 23px 43px 23px 0;
+	border-color: transparent #1C0000 transparent transparent;
+	border-style: solid;
+}
+
+.next{
+    margin: 10px;
+    width: 0;
+	height: 0;
+	border-width: 23px 0 23px 43px;
+	border-color: transparent transparent transparent #1C0000;
+	border-style: solid;
+}
+
+
+.carton-container{
+    width: fit-content;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#jugador-main {
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.todos{
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    align-content: flex-start;
+    font-size: medium;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cell{
+    padding: 5px;
+
+}
+
+.grid3{
+    padding: 9px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-content: center;
+    font-size: xxx-large;
+}
+
+
+.grid4{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: xx-large;
+
+
+}
+
+.grid5{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: xx-large;
+}
+
+.puntos{
+    position: relative;
+    top: 30%;
+    right: 0;
+
+}
